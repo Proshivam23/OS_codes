@@ -9,9 +9,9 @@ void access(vector<int> &pages, vector<int> &order, int page, int frames, int &f
         fault_flag = 1;
         fault++;
         if(pages.size()>= frame){
-            auto it = find(order.begin(), order.end(), page[0]);
+            auto it = find(order.begin(), order.end(), pages[0]);
             *it = page;
-            pages.erase(page);
+            pages.erase(pages.begin());
         }
         if(pages.size()<frames)
             order.push_back(page);
