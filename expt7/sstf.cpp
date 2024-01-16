@@ -12,7 +12,7 @@ int calseek(vector<int> &sequence, int head, int size){
 
         for(int i=0; i<size; i++){
             int seek = abs(current_head - sequence[i]);
-            if(seek<min_index){
+            if(seek<min_seek){
                 min_index = i;
                 min_seek = seek;
             }

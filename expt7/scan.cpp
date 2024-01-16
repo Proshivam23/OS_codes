@@ -96,8 +96,7 @@ int main()
     int n, head, dir;
     cout << "enter head address:";
     cin >> head;
-    cout << endl
-         << "enter number of requests in the queue" << endl;
+    cout << endl<< "enter number of requests in the queue" << endl;
     cin >> n;
 
     vector<int> q(n);
