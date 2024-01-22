@@ -64,7 +64,7 @@ void SRTN(vector<Process>& p)
 {
     int n = p.size();
     vector<pair<char, int>> gantte;
-    sort(p.begin() , p.end() , [&](Process a , Process b){return a.at < b.at;});    
+    sort(p.begin() , p.end() , [&](Process a , Process b){return a.at < b.at;});
 
     //Intuition : Run every Process until a new Process has arrived , rest remains same 
     vector<Process> ans;
